@@ -6,7 +6,9 @@ You may be wondering what Joe Time is. It was a term coined by myself to describ
 The (not yet patented) formula is rather simple, yet highly accurate. In order to understand the formula, let's now go over the variables involved.
 
 A = the time in which Joe took to respond in regards to his arrival time
+
 B = Joe's current age. His birthdate is January 24, 2000.
+
 C = The amount of time Joe said it would take him to arrive. This sometimes requires guesswork. If he says he will be leaving his house a 2pm, and it takes 1 hour to get to my house, then C = 1hr (60 min).
 
 The aforementioned formula is:
