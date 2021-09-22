@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Prompt user for data input-->
+
+Joe's response time in minutes:<br> <input type="Number"  id="A"><br><br>
+Joe's current age:<br> <input type="Number"  id="B"><br><br>
+Joe's estimated arrival time in minutes:<br> <input type="Number"  id="C"><br><br>
+<button onclick="fn1()" id="btn1">Enter</button>
+
+<p id="output"></p>
+
+<script type="text/javascript">
+
+  function timeConvert(n) {
+    var num = n;
+    var hours = (num / 60);
+    var rhours = Math.floor(hours);
+    var minutes = (hours - rhours) * 60;
+    var rminutes = Math.round(minutes);
+    return "Joe will arrive in: " + rhours + " hour(s) and " + rminutes + " minute(s).";
+  }
+
+  function fn1()
+  {
+    var numA = Number(document.getElementById("A").value);
+    var numB = Number(document.getElementById("B").value);
+    var numC = Number(document.getElementById("C").value);
+    var res1 = 0;
+
+    res1 = numA + numB;
+    const res2 = res1 * numC;
+    const res3 = res2 * .37;
+    const res4 = res3 / 2;
+
+
+    console.log(numA);
+    console.log(numB);
+    console.log(numC);
+    console.log(res1);
+    console.log(res2);
+    console.log(res3);
+    console.log(res4);
+
+    var result = timeConvert(res4);
+    document.getElementById("output").innerHTML = result;
+
+  }
+
+
+</script>
+
+
+</body>
+</html>
